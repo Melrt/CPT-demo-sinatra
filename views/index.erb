@@ -27,10 +27,11 @@
               <div class="profile-header <%= profile[:color] %>">
                   <% if profile[:gender] == "woman" %>
                     <div class="profile-picture" style="background-image: url('/woman.png')"></div>
-                  <% else profile[:gender] == "man"%>
+                  <% else profile[:gender] == "man" %>
                     <div class="profile-picture" style="background-image: url('/man.png')"></div>
                   <% end %>
                 <h3 class="profile-name"><%= profile[:first_name]%></h3>
+                <p><%= profile[:city] %></p>
               </div>
               <div class="profile-content">
                 <p class="profile-quote">“<%=profile[:quote]%>”</p>
