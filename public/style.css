@@ -97,8 +97,11 @@ h3 {
 
 .profile-header {
   position: relative;
-  display: flex;
-  justify-content: center;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  text-align: center;
   padding: 3em 0 1em 0;
   border-radius: 5px 5px 0 0;
   background-color: #efefef;
@@ -109,6 +112,10 @@ h3 {
 .profile-header.purple { background-color: #ECEAFF; }
 .profile-header.yellow { background-color: #FFF7E8; }
 
+.profile-header p {
+  margin: 0;
+}
+
 .profile-link {
   color: black;
   text-decoration: none;
@@ -117,8 +124,10 @@ h3 {
 .profile-picture {
   position: absolute;
   top: -35px;
+  left: 85px;
   width: 70px;
   height: 70px;
+  text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

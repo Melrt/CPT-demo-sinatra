@@ -26,9 +26,9 @@
             <div class="profile-card">
               <div class="profile-header <%= profile[:color] %>">
                   <% if profile[:gender] == "woman" %>
-                    <div class="profile-picture" style="background-image: url('/bacteria.png')"></div>
+                    <div class="profile-picture" style="background-image: url('/woman.png')"></div>
                   <% else profile[:gender] == "man"%>
-                    <div class="profile-picture" style="background-image: url('/patient.png')"></div>
+                    <div class="profile-picture" style="background-image: url('/man.png')"></div>
                   <% end %>
                 <h3 class="profile-name"><%= profile[:first_name]%></h3>
               </div>
@@ -41,7 +41,7 @@
     </div>
     <div class="footer">
       <p>
-        Pages réalisées avec ❤️ pour la formation Code Pour Tou·te·s du
+        Page réalisée avec ❤️ pour la formation Code Pour Tou·te·s du
         <a href="https://www.lewagon.com/fr/nantes">Wagon Nantes </a>
         &
         <a href="https://www.lewagon.com/fr/rennes">Rennes</a>
