@@ -1,0 +1,146 @@
+/* Add any styling you want */
+@font-face{
+  font-family:SFProText-bold;
+  src:url("https://ojay-dev.github.io/Suhstei-2/assets/fonts/SF-Pro-Text-Bold.woff")
+}
+
+@font-face{
+  font-family:SFProText;
+  src:url("https://ojay-dev.github.io/Suhstei-2/assets/fonts/SF-Pro-Text-Regular.otf")
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "SFProText";
+}
+
+h1 {
+  font-family: "SFProText-bold";
+  font-size: 3.8em;
+}
+
+h2 {
+  font-family: "SFProText";
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-family: "SFProText-bold";
+  font-size: 1.2em
+}
+
+.banner {
+  position: relative;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffead4;
+  background-image: linear-gradient(0deg, rgba(80,80,80,.6), transparent 45%), url('/banner.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 1.5em;
+  margin: 0;
+  color: white;
+}
+
+.banner h1 .red {
+  color: #FD1015;
+  background-color: #FFE0E1;
+  padding: 0.2em 0.3em;
+}
+
+.banner .logo {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.footer {
+  color: white;
+  background-color: #1e1e1e;
+  margin-top: 3.5em;
+  padding: 0.5em 3em;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3em;
+}
+
+.profile-card {
+  margin-top: 35px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 3em 0 1em 0;
+  border-radius: 5px 5px 0 0;
+  background-color: #efefef;
+}
+
+.profile-header.blue   { background-color: #E8FAFE; }
+.profile-header.green  { background-color: #E4FFF3; }
+.profile-header.purple { background-color: #ECEAFF; }
+.profile-header.yellow { background-color: #FFF7E8; }
+
+.profile-link {
+  color: black;
+  text-decoration: none;
+}
+
+.profile-picture {
+  position: absolute;
+  top: -35px;
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-name {
+  margin: 0;
+}
+
+.profile-content {
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.profile-quote {
+  margin: 0;
+  text-align: center;
+  font-size: 9px;
+}

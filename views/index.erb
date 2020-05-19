@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Pour Tou·te·s</title>
+    <link rel="icon" href="/logo.png" type="image/png" />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="banner">
+      <a href="https://www.lewagon.com/fr/nantes">
+        <img src="/logo.png" alt="Logo" class="logo" width=70>
+      </a>
+      <h1>
+        <span class="red">Code</span> Pour Tou·te·s
+      </h1>
+    </div>
+    <div class="container">
+      <h2>Introducing people who code 🤘</h2>
+
+      <div class="profiles">
+        <% @profiles.each do |profile| %>
+            <div class="profile-card">
+              <div class="profile-header <%= profile[:color] %>">
+                  <% if profile[:gender] == "woman" %>
+                    <div class="profile-picture" style="background-image: url('/bacteria.png')"></div>
+                  <% else profile[:gender] == "man"%>
+                    <div class="profile-picture" style="background-image: url('/patient.png')"></div>
+                  <% end %>
+                <h3 class="profile-name"><%= profile[:first_name]%></h3>
+              </div>
+              <div class="profile-content">
+                <p class="profile-quote">“<%=profile[:quote]%>”</p>
+              </div>
+            </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Pages réalisées avec ❤️ pour la formation Code Pour Tou·te·s du
+        <a href="https://www.lewagon.com/fr/nantes">Wagon Nantes </a>
+        &
+        <a href="https://www.lewagon.com/fr/rennes">Rennes</a>
+      </p>
+    </div>
+  </body>
+</html>
